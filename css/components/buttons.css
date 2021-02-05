@@ -1,0 +1,8 @@
+/**
+ * @file
+ * Visual styles for buttons.
+ */
+
+.button {
+  cursor: pointer;
+}
