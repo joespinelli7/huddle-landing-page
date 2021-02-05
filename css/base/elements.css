@@ -5,6 +5,5 @@
 
 html {
   height: 100%;
-  font-size: var(--fontSize);
   scroll-behavior: smooth;
 }
