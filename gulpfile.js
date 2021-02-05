@@ -8,3 +8,6 @@ gulp.task('css', function() {
     .pipe(concatCss('css/styles.css'))
     .pipe(gulp.dest('.'));
 });
+
+// article followed:
+// https://travishorn.com/integrating-multiple-stylesheets-in-a-single-site-e720256edcee
