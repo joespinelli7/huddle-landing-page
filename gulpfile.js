@@ -1,6 +1,6 @@
 'use strict';
 
-const { src, dest, parallel, series } = require('gulp');
+const { src, dest } = require('gulp');
 const concatCss = require('gulp-concat-css');
 
 function generateCSS(cb) {
