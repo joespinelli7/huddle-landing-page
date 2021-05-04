@@ -5,4 +5,5 @@
 
 .button {
   cursor: pointer;
+  text-transform: capitalize;
 }
