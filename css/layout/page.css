@@ -1,0 +1,15 @@
+/**
+ * @file
+ * Layout styling for pages.
+ */
+
+.page__header {
+  padding: 2rem 3rem 8rem;
+}
+
+/* If the screen size is 768px wide or less, hide the element */
+@media screen and (max-width: 768px) {
+  .page__header {
+    padding: 1rem 1rem 5rem;
+  }
+}
