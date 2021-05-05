@@ -1,0 +1,114 @@
+/**
+ * @file
+ * Visual styles for content.
+ */
+
+ .content__intro {
+   text-align: center;
+ }
+
+ .content__body {
+   width: 35%;
+   margin: auto;
+   text-align: center;
+ }
+
+ .content__button {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 14px;
+   border-radius: 40px;
+   background-color: var(--pink);
+   border: 1px solid var(--pink);
+   padding: 20px 95px;
+   color: var(--white);
+   box-shadow: 0px 2px 3px 1px rgba(0, 45, 56, 30%)
+ }
+
+ .content__button:hover {
+   background-color: var(--white);
+   color: var(--pink);
+   box-shadow: 0px 2px 3px 1px rgba(240, 0, 152, 35%);
+   transition: color 600ms, background-color 600ms;
+ }
+
+ .content__button--wrapper {
+   display: flex;
+   text-decoration: none;
+   justify-content: center;
+   margin: 1.5rem 0 10rem;
+ }
+
+ .content__image-mockups {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
+   animation: fadeIn 0.5s ease-in forwards;
+ }
+
+ @media screen and (max-width: 768px) {
+   .content__intro {
+     font-size: 26px;
+     padding: 0 2rem;
+   }
+
+   .content__body {
+     width: 100%;
+   }
+
+   .content__button {
+     padding: 12px 55px;
+   }
+
+   .content__button--wrapper {
+     margin: 2rem 0 7rem;
+   }
+
+   .content__image-mockups {
+     width: 90%;
+   }
+ }
+
+ @keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(0px) scale(0.2);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-50px) scale(1);
+  }
+}
+
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(0px) scale(0.2);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-50px) scale(1);
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(0px) scale(0.2);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-50px) scale(1);
+  }
+}
+
+@-o-keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(0px) scale(0.2);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-50px) scale(1);
+  }
+}
