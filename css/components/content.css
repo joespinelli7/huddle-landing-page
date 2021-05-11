@@ -3,18 +3,18 @@
  * Visual styles for content.
  */
 
- .content__intro {
+ .content__intro-heading {
    text-align: center;
  }
 
- .content__body {
+ .content__intro-body {
    width: 35%;
    margin: auto;
    text-align: center;
  }
 
- .content__button {
-   font-family: 'Open Sans', sans-serif;
+ .content__intro-button {
+   font-family: 'Poppins', sans-serif;
    font-size: 14px;
    border-radius: 40px;
    background-color: var(--pink);
@@ -24,14 +24,14 @@
    box-shadow: 0px 2px 3px 1px rgba(0, 45, 56, 30%)
  }
 
- .content__button:hover {
+ .content__intro-button:hover {
    background-color: var(--white);
    color: var(--pink);
    box-shadow: 0px 2px 3px 1px rgba(240, 0, 152, 35%);
    transition: color 600ms, background-color 600ms;
  }
 
- .content__button--wrapper {
+ .content__intro-button--wrapper {
    display: flex;
    text-decoration: none;
    justify-content: center;
@@ -46,26 +46,66 @@
    animation: fadeIn 0.5s ease-in forwards;
  }
 
+ .content__intro-info {
+   display: flex;
+   justify-content: center;
+   align-items: baseline;
+   gap: 200px;
+ }
+
+ .content__intro-info-section-header {
+   font-size: 4rem;
+   margin: 90px 0 -1px;
+   animation: fadeIn 0.5s ease-in forwards;
+ }
+
+ .content__image-intro-info-section {
+   width: 15%;
+   margin: 50px 0 -100px 5px;
+   animation: fadeIn 0.5s ease-in forwards;
+ }
+
+ .content__intro-info-section-text {
+   color: var(--lightGrey);
+   animation: fadeIn 0.5s ease-in forwards;
+ }
+
  @media screen and (max-width: 768px) {
-   .content__intro {
+   .content__intro-heading {
      font-size: 26px;
      padding: 0 2rem;
    }
 
-   .content__body {
+   .content__intro-body {
      width: 100%;
    }
 
-   .content__button {
+   .content__intro-button {
      padding: 12px 55px;
    }
 
-   .content__button--wrapper {
+   .content__intro-button--wrapper {
      margin: 2rem 0 7rem;
    }
 
    .content__image-mockups {
      width: 90%;
+   }
+
+   .content__intro-info {
+     display: flex;
+     align-items: center;
+     gap: 25px;
+     flex-direction: column;
+   }
+
+   .content__intro-info div:first-of-type {
+     margin-bottom: -60px;
+   }
+
+   .content__intro-info-section-header {
+     font-size: 3.5rem;
+     margin-bottom: -5px;
    }
  }
 
