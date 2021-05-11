@@ -118,6 +118,25 @@ html {
   animation: fadeIn 0.5s ease-in forwards;
 }
 
+.content__curved-section-text-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--paleBlue);
+}
+
+.content__curved-section-text-left > div {
+  width: 50%;
+}
+
+.content__curved-section-text-left > img {
+  width: 30%;
+}
+
+.content__curved-section-text-left > div > p {
+  width: 70%;
+}
+
 @media screen and (max-width: 768px) {
   .content__intro-heading {
     font-size: 26px;
@@ -209,7 +228,8 @@ html {
  * Visual styles for curved sections.
  */
 
-.curved-section {
+.curved-section__image {
+  margin-bottom: -6px;
   width: 100%;
 }
 /**
