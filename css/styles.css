@@ -27,22 +27,6 @@ body {
 }
 /**
  * @file
- * Layout styling for pages.
- */
-
-.page__header {
-  padding: 2rem 3rem 8rem;
-}
-
-/* If the screen size is 768px wide or less, change padding */
-
-@media screen and (max-width: 768px) {
-  .page__header {
-    padding: 1rem 1rem 5rem;
-  }
-}
-/**
- * @file
  * Visual styles for buttons.
  */
 
@@ -122,23 +106,30 @@ body {
   animation: fadeIn 0.5s ease-in forwards;
 }
 
-.content__curved-section-text-left {
+.content__curved-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--paleBlue);
-  padding: 25px 0px;
+  padding: 50px 0px;
 }
 
-.content__curved-section-text-left > div {
+.content__curved-section > div {
   width: 50%;
 }
 
-.content__curved-section-text-left > img {
+.content__curved-section > img {
   width: 40%;
 }
 
-.content__curved-section-text-left > div > p {
+.content__curved-section--middle {
+  padding-left: 10.5rem;
+}
+
+.content__curved-section--blue {
+  background-color: var(--paleBlue);
+}
+
+.content__curved-section--blue > div > p {
   width: 70%;
 }
 
@@ -180,27 +171,40 @@ body {
     margin-bottom: -5px;
   }
 
-  .content__curved-section-text-left {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
+  .content__curved-section {
+    flex-direction: column;
     text-align: center;
-    padding: 30px 0;
   }
 
-  .content__curved-section-text-left > div {
+  .content__curved-section > div {
     width: 95%;
   }
 
-  .content__curved-section-text-left > img {
+  .content__curved-section > img {
     width: 70%;
   }
 
-  .content__curved-section-text-left > div > p {
+  .content__curved-section--middle {
+    padding-left: unset;
+  }
+
+  .content__curved-section--blue {
+    flex-direction: column-reverse;
+  }
+
+  .content__curved-section--blue > div {
+    width: 95%;
+  }
+
+  .content__curved-section--blue > img {
+    width: 70%;
+  }
+
+  .content__curved-section--blue > div > p {
     width: unset;
   }
 
-  .content__curved-section-text-left > div > h2 {
+  .content__curved-section > div > h2 {
     margin-top: 3.5rem;
   }
 }
@@ -304,5 +308,21 @@ body {
 
   .header__logo {
     width: 30vw;
+  }
+}
+/**
+ * @file
+ * Layout styling for pages.
+ */
+
+.page__header {
+  padding: 2rem 3rem 8rem;
+}
+
+/* If the screen size is 768px wide or less, change padding */
+
+@media screen and (max-width: 768px) {
+  .page__header {
+    padding: 1rem 1rem 5rem;
   }
 }
