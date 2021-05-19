@@ -3,8 +3,13 @@
  * Visual styles for content.
  */
 
- .content__intro-heading {
+ .content__intro-heading,
+ .content__end-heading {
    text-align: center;
+ }
+
+ .content__end-heading {
+   margin-top: 8rem;
  }
 
  .content__intro-body {
@@ -13,7 +18,8 @@
    text-align: center;
  }
 
- .content__intro-button {
+ .content__intro-button,
+ .content__end-button {
    font-family: 'Poppins', sans-serif;
    font-size: 14px;
    border-radius: 40px;
@@ -24,14 +30,16 @@
    box-shadow: 0px 2px 3px 1px rgba(0, 45, 56, 30%)
  }
 
- .content__intro-button:hover {
+ .content__intro-button:hover,
+ .content__end-button:hover {
    background-color: var(--white);
    color: var(--pink);
    box-shadow: 0px 2px 3px 1px rgba(240, 0, 152, 35%);
    transition: color 600ms, background-color 600ms;
  }
 
- .content__intro-button--wrapper {
+ .content__intro-button--wrapper,
+ .content__end-button--wrapper {
    display: flex;
    text-decoration: none;
    justify-content: center;
@@ -98,20 +106,27 @@
  }
 
  @media screen and (max-width: 768px) {
-   .content__intro-heading {
+   .content__intro-heading,
+   .content__end-heading {
      font-size: 26px;
      padding: 0 2rem;
+   }
+
+   .content__end-heading {
+     margin-top: 4rem;
    }
 
    .content__intro-body {
      width: 90%;
    }
 
-   .content__intro-button {
+   .content__intro-button,
+   .content__end-button {
      padding: 12px 42px;
    }
 
-   .content__intro-button--wrapper {
+   .content__intro-button--wrapper,
+   .content__end-button--wrapper {
      margin: 2rem 0 7rem;
    }
 
