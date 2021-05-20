@@ -1,32 +1,5 @@
 /**
  * @file
- * Base element styles.
- */
-
-html {
-  height: 100%;
-  scroll-behavior: smooth;
-  font-family: 'Open Sans', sans-serif;
-}
-
-body {
-  margin: 0;
-}
-/**
- * @file
- * Theme variables.
- */
-
-:root {
-  /* Colors */
-  --darkCyan: #00252E;
-  --paleBlue: #F5FAFF;
-  --pink: #F00098;
-  --white: #fff;
-  --lightGrey: #9a9a9a;
-}
-/**
- * @file
  * Layout styling for pages.
  */
 
@@ -40,6 +13,35 @@ body {
   .page__header {
     padding: 1rem 1rem 5rem;
   }
+}
+/**
+ * @file
+ * Base element styles.
+ */
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  color: var(--darkCyan);
+  padding-bottom: 20px;
+}
+/**
+ * @file
+ * Theme variables.
+ */
+
+:root {
+  /* Colors */
+  --darkCyan: #00252E;
+  --paleBlue: #F5FAFF;
+  --pink: #F00098;
+  --white: #fff;
+  --lightGrey: #9a9a9a;
 }
 /**
  * @file
@@ -295,6 +297,33 @@ body {
 .curved-section__image {
   margin-bottom: -6px;
   width: 100%;
+}
+/**
+ * @file
+ * Visual styles for footer.
+ */
+
+.footer__contact-info {
+  padding: 2rem 3rem 8rem;
+  color: var(--white);
+  background-color: var(--darkCyan);
+  margin-bottom: -20px;
+}
+
+.footer__logo {
+  width: 25vw;
+  max-width: 14rem;
+  filter: brightness(0) invert(1) opacity(1);
+}
+
+@media screen and (max-width: 768px) {
+  .footer__contact-info {
+    padding: 2rem 1.4rem 2rem;
+  }
+
+  .footer__logo {
+    width: 50vw;
+  }
 }
 /**
  * @file

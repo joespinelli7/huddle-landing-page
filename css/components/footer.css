@@ -1,0 +1,28 @@
+/**
+ * @file
+ * Visual styles for footer.
+ */
+
+.footer__contact-info {
+  padding: 2rem 3rem 8rem;
+  color: var(--white);
+  background-color: var(--darkCyan);
+  margin-bottom: -20px;
+}
+
+.footer__logo {
+  width: 25vw;
+  max-width: 14rem;
+  filter: brightness(0) invert(1) opacity(1);
+}
+
+
+@media screen and (max-width: 768px) {
+  .footer__contact-info {
+    padding: 2rem 1.4rem 2rem;
+  }
+
+  .footer__logo {
+    width: 50vw;
+  }
+}
