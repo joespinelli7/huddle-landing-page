@@ -16,6 +16,11 @@
   filter: brightness(0) invert(1) opacity(1);
 }
 
+.footer__image {
+  transform: translateY(3px);
+  margin-right: 1rem;
+}
+
 
 @media screen and (max-width: 768px) {
   .footer__contact-info {

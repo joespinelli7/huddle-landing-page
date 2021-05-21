@@ -39,6 +39,7 @@
    }
 
    .header__logo {
-     width: 30vw;
+     width: 35vw;
+     transform: translateY(2px);
    }
  }
