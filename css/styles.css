@@ -29,6 +29,22 @@ body {
 }
 /**
  * @file
+ * Layout styling for pages.
+ */
+
+.page__header {
+  padding: 2rem 3rem 8rem;
+}
+
+/* If the screen size is 768px wide or less, change padding */
+
+@media screen and (max-width: 768px) {
+  .page__header {
+    padding: 1rem 1rem 5rem;
+  }
+}
+/**
+ * @file
  * Visual styles for buttons.
  */
 
@@ -290,10 +306,9 @@ body {
 .footer__contact-info {
   display: flex;
   gap: 15rem;
-  padding: 5rem 5rem 5rem;
+  padding: 5rem 5rem 2.5rem;
   color: var(--white);
   background-color: var(--darkCyan);
-  margin-bottom: -20px;
 }
 
 .footer__logo {
@@ -346,9 +361,24 @@ body {
   width: 70%;
 }
 
+.footer__socials {
+  padding: 0 5rem 2.5rem;
+  background-color: var(--darkCyan);
+  margin-bottom: -20px;
+}
+
+.footer__socials > a {
+  margin-right: 1.2rem;
+}
+
+.footer__socials span {
+  color: var(--white);
+  font-size: 2em;
+}
+
 @media screen and (max-width: 768px) {
   .footer__contact-info {
-    padding: 2rem 2rem 2rem;
+    padding: 2rem 2rem 0;
     flex-direction: column-reverse;
     gap: 5rem;
   }
@@ -375,6 +405,10 @@ body {
     display: flex;
     justify-content: flex-end;
     text-decoration: none;
+  }
+
+  .footer__socials {
+    padding: 2rem 2rem 2rem;
   }
 }
 /**
@@ -421,21 +455,5 @@ body {
   .header__logo {
     width: 35vw;
     transform: translateY(2px);
-  }
-}
-/**
- * @file
- * Layout styling for pages.
- */
-
-.page__header {
-  padding: 2rem 3rem 8rem;
-}
-
-/* If the screen size is 768px wide or less, change padding */
-
-@media screen and (max-width: 768px) {
-  .page__header {
-    padding: 1rem 1rem 5rem;
   }
 }
