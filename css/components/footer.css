@@ -76,6 +76,10 @@
   font-size: 2em;
 }
 
+.footer__socials span:hover {
+  color: var(--pink);
+}
+
 @media screen and (max-width: 768px) {
   .footer__contact-info {
     padding: 2rem 2rem 0;

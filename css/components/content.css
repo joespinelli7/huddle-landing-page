@@ -27,7 +27,7 @@
    border: 1px solid var(--pink);
    padding: 20px 95px;
    color: var(--white);
-   box-shadow: 0px 2px 3px 1px rgba(0, 45, 56, 30%)
+   box-shadow: 0px 2px 3px 1px rgba(0, 45, 56, 30%);
  }
 
  .content__intro-button:hover,

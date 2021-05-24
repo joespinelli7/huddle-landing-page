@@ -29,22 +29,6 @@ body {
 }
 /**
  * @file
- * Layout styling for pages.
- */
-
-.page__header {
-  padding: 2rem 3rem 8rem;
-}
-
-/* If the screen size is 768px wide or less, change padding */
-
-@media screen and (max-width: 768px) {
-  .page__header {
-    padding: 1rem 1rem 5rem;
-  }
-}
-/**
- * @file
  * Visual styles for buttons.
  */
 
@@ -376,6 +360,10 @@ body {
   font-size: 2em;
 }
 
+.footer__socials span:hover {
+  color: var(--pink);
+}
+
 @media screen and (max-width: 768px) {
   .footer__contact-info {
     padding: 2rem 2rem 0;
@@ -455,5 +443,21 @@ body {
   .header__logo {
     width: 35vw;
     transform: translateY(2px);
+  }
+}
+/**
+ * @file
+ * Layout styling for pages.
+ */
+
+.page__header {
+  padding: 2rem 3rem 8rem;
+}
+
+/* If the screen size is 768px wide or less, change padding */
+
+@media screen and (max-width: 768px) {
+  .page__header {
+    padding: 1rem 1rem 5rem;
   }
 }
